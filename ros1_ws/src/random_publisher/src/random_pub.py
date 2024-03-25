@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
 from random_pub_sub_interfaces.srv import SetInt32, SetInt32Response
 from random_pub_sub_interfaces.msg import RandomRange
