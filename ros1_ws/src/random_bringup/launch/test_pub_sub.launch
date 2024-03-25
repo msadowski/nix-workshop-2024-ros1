@@ -1,0 +1,14 @@
+<launch>
+    <!-- Launch the random_publisher node -->
+    <node name="random_publisher" pkg="random_publisher" type="random_pub.py" output="screen">
+        <param name="start_number" value="100" />
+        <param name="stop_number" value="200" />
+        <param name="timer_period_s" value="0.02" />
+    </node>
+
+    <!-- Launch the random_subscriber node -->
+    <node name="random_subscriber" pkg="random_subscriber" type="random_sub.py" output="screen">
+        <param name="min_interest" value="150" />
+        <param name="max_interest" value="170" />
+    </node>
+</launch>
